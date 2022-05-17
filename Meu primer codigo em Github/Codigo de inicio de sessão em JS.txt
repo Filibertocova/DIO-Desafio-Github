@@ -1,0 +1,19 @@
+let userName = prompt("Quién está ahí?", "");//iniciar sessão
+
+if (userName == "Admin") { //Se é "Admin", escreva senha
+
+    let pass = prompt("¿Contraseña?", "");
+
+    if (pass === "heroe") { //senha certa, benvindo
+  alert( "Benvindo!" );
+    } else if (pass === "" || pass === null) { //esc ou espaço vazio
+  alert( "Cancelado." );
+    } else {
+  alert( "Contraseña incorrecta" ); //senha incorreta
+    }
+
+} else if (userName === "" || userName === null) {
+    alert( "Cancelado" );
+} else {
+    alert( "Usuário não autorizado" ); //!Admin
+}
